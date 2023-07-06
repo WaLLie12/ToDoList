@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>ToDoList</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <h1>
-                Todo List
-            </h1>
-            <div class="header-input">
-                <form>
-                    <input type="text"> 
-                </form>
-                <button class="input__button">Add task</button>
+        <div class="container">
+            <header class="header">
+                <h1>
+                    Todo List
+                </h1>
+                <div class="header-input">
+                        <input type="text" placeholder="What's your task?"> 
+                    <button class="input__button">Add task</button>
+                </div>
+            </header>
+            <button class="hide__button">
+                Hide List
+            </button>
+            <div class="add__elements">
+                <ul class="add__list">
+                    
+                </ul>
+                <button class="btn__remove">Delete All</button>
             </div>
-        </header>
-        <button class="hide__button">
-            Hide List
-        </button>
-        <div class="add__elements">
-            <ul class="add__list">
-                
-            </ul>
-            <button class="btn__remove">remove</button>
         </div>
-
     </div>
 </body>
 </html>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: hsla(221, 40%, 51%, 0.7);
+    min-width: 250px;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.container{
+    border: 2px solid rgb(119, 196, 188);
+    border-radius: 10%;
+    height: 400px;
+    width: 1000px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+    background-color:#ffffff;
+}
+
+.header{
+    padding-block: 2.5em 1em;
+    background-color: #d48c62;
+}
+
+.header-input{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+   font-size: 3.5em;
+   margin:  0 0  0.65em;
+   color: #ffff;
+}
+
+input {
+    padding: 1em;
+    font-size: 1em;
+    width: 50%;
+    border: 1px solid #dcdcdc;
+}
+
+.input__button{
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    background-color:#924e92b5;
+    transition: all .5s ease 0s;
+    color: #fff;
+}
+
+.input__button:hover{
+    background-color: #926192b5;
+    transition: all .5s ease 0s;
+}
+
+
+.hide__button{
+    padding-block: 1em;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color:#924e92b5;
+    transition: all .5s ease 0s;
+    color: #fff;
+}
+
+.hide__button:hover{
+    background-color: #926192b5;
+    transition: all .5s ease 0s;
+}
+
+.add__elements{
+    display: flex;
+    padding: 1em;
+}
+
+.btn__remove{
+    color: white;
+    background-color:#924e92b5;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: all .5s ease 0s;
+    cursor: pointer
+}
+
+.btn__remove:hover{
+    background-color: #926192b5;
+    transition: all .5s ease 0s;
+}
