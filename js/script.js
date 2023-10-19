@@ -8,15 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let hideListItems = false
 
+    window.onload = () => {
+        input.focus(); /*or input autofocus*/
+    };
+      
 
-    addTask.addEventListener('click', () =>{
-        const newTask = input.value
-        if(newTask){
-            const list = createEl(newTask)
-            wrapperForAddingElements.append(list);
+    addTask.addEventListener('click', () => {
+        const newTask = input.value.trim();
+        if (newTask) {
+            const list = createEl(newTask);
+            wrapperForAddingElements.appendChild(list);
             input.value = '';
-            }   
-        })
+        }
+    });
 
     function createEl (element){
         let list = document.createElement('li')
@@ -32,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return list
     }
 
-    deleteBtn.addEventListener('submit', () =>{
+    deleteBtn.addEventListener('click', () =>{
         const listItems = document.querySelectorAll('li')
         listItems.forEach(item =>{
             item.remove()
